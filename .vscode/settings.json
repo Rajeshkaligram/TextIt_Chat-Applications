@@ -1,0 +1,14 @@
+{
+    "java.compile.nullAnalysis.mode": "automatic",
+    "cSpell.ignoreWords": [
+        "Chefscl",
+        "Countryscr",
+        "Drivinglicense",
+        "Pressable",
+        "Rajesh",
+        "TEXTIT",
+        "backimg",
+        "dimen"
+    ],
+    "java.configuration.updateBuildConfiguration": "disabled"
+}

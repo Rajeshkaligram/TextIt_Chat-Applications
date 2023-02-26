@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "127250145773",
+    "project_id": "textit-a3b55",
+    "storage_bucket": "textit-a3b55.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:127250145773:android:e963e545b79ef52a5587e4",
+        "android_client_info": {
+          "package_name": "com.textit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "127250145773-ltv29iedhjdgpm6p67vbq57dkmgorv0k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.textit",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "127250145773-2p6n7g74vugi2k9nonlfjrot2ml0dpfj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOTKZvoXbqPPWG9wDstecdtUPQa9h_Rww"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "127250145773-2p6n7g74vugi2k9nonlfjrot2ml0dpfj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "127250145773-hd1fkso0va5e08rqt52p6spf6n0g2gbt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.TextIt"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
