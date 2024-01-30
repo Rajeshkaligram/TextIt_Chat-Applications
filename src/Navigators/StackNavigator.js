@@ -6,6 +6,7 @@ import Signup from '../Screens/Auth/Signup';
 import OtpVerification from '../Screens/Auth/OtpVerification';
 import ChatHome from '../Screens/ChatHomePage/ChatHome';
 import OtpAuthentication from '../Screens/Auth/OtpAuthentication ';
+import ChatScreen from '../Screens/ChatHomePage/ChatScreen';
 
 const Stack = createStackNavigator();
 
@@ -29,6 +30,7 @@ const StackNavigator = () => {
         />
         <Stack.Screen name="OtpAuthentication" component={OtpAuthentication} />
         <Stack.Screen name="ChatHome" component={ChatHome} />
+        <Stack.Screen name="ChatScreen" component={ChatScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -14,6 +14,7 @@ import {Font} from '../../Utils/Theme/Font';
 import {useRoute} from '@react-navigation/native';
 import OTPInputView from '@twotalltotems/react-native-otp-input';
 import auth from '@react-native-firebase/auth';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const OtpVerification = ({navigation}) => {
   const [confirm, setConfirm] = useState(null);
@@ -41,6 +42,7 @@ const OtpVerification = ({navigation}) => {
       const response = await confirm.confirm(code);
       if (response) {
         navigation.navigate('ChatHome');
+        await AsyncStorage.setItem('isSignedUp', 'true');
       }
     } catch (error) {
       console.log(error);

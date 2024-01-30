@@ -10,11 +10,26 @@ import {
 import React, {useEffect} from 'react';
 import {ImagePath} from '../../Utils/Theme/ImagePath';
 import {Font} from '../../Utils/Theme/Font';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const Splash = props => {
   useEffect(() => {
-    setTimeout(() => {
-      props.navigation.navigate('Signup');
+    setTimeout(async () => {
+      try {
+        // Check if the user has signed up by retrieving a value from AsyncStorage
+        const isSignedUp = await AsyncStorage.getItem('isSignedUp');
+
+        if (isSignedUp === 'true') {
+          // If the user has signed up, navigate to the home screen
+          props.navigation.navigate('ChatHome'); // Change 'ChatHome' to your home screen name
+        } else {
+          // If the user has not signed up, navigate to the signup screen
+          props.navigation.navigate('Signup');
+        }
+      } catch (error) {
+        console.error('Error checking signup status:', error);
+        // Handle the error as needed
+      }
     }, 3000);
   }, []);
 
